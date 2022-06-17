@@ -85,17 +85,20 @@ input:focus {
   border: 1px solid var(--greyish-blue);
 }
 
-input:invalid {
-  border: 1px solid var(--red);
-  background: url(icon-error.svg) no-repeat right 20px center;
-}
-
-.error {
+#error {
   color: var(--red);
   font-size: 10px;
   margin-top: 5px;
   margin-bottom: 20px;
   text-align: right;
+  visibility: hidden;
+}
+
+input:required:invalid:focus-visible {
+  background-image: url(icon-error.svg);
+  background-position: 90% center;
+  background-repeat: no-repeat;
+  border: 1px solid var(--red);
 }
 
 button {
