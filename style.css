@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+  --red: hsl(0, 100%, 74%);
+  --blue: hsl(248, 32%, 49%);
+  --green: hsl(154, 59%, 51%);
+  --dark-blue: hsl(249, 10%, 26%);
+  --greyish-blue: hsl(246, 25%, 77%);
+  --box-shadow: rgba(62, 60, 73, 0.3);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-image: url(bg-intro-desktop.png);
+  background-color: var(--red);
+  color: white;
+  margin-left: 10%;
+  margin-right: 10%;
+  max-height: 100vh;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.text {
+  padding-right: 50px;
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+.text p {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.login {
+  width: 70%;
+}
+
+.free-trial {
+  margin-bottom: 1.5rem;
+  background-color: var(--blue);
+  border-radius: 10px;
+  text-align: center;
+  padding: 15px;
+  min-width: 100%;
+  box-shadow: var(--box-shadow) 0px 5px;
+}
+
+form {
+  max-width: 500px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 40px;
+  min-width: 100%;
+  box-shadow: var(--box-shadow) 0px 5px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #cccccc96;
+  font-weight: 600;
+  font-size: 0.8rem;
+  outline: none;
+}
+
+
+input:focus {
+  border: 1px solid var(--greyish-blue);
+}
+
+input:invalid {
+  border: 1px solid var(--red);
+  background: url(icon-error.svg) no-repeat right 20px center;
+}
+
+.error {
+  color: var(--red);
+  font-size: 10px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  text-align: right;
+}
+
+button {
+  background-color: var(--green);
+  color: white;
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  font-weight: 600;
+  font-size: 0.8rem;
+  cursor: pointer;
+  outline: none;
+  width: 100%;
+}
+
+button:hover {
+  background-color: hsl(154, 65%, 68%);
+  box-shadow: var(--green) 0px 2px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--red);
+}
+
+.terms {
+  font-size: 0.6rem;
+  color: var(--greyish-blue);
+  margin-top: 10px;
+}
+
+/* media query for mobile devices */
+@media screen and (max-width: 992px) {
+  body {
+    background-image: url(bg-intro-mobile.png);
+    background-color: var(--red);
+    text-align: center;
+    margin: 20% 5%;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  main {
+    height: auto;
+    display: block;
+  }
+  .text {
+    padding-right: 0;
+    margin-bottom: 5rem;
+  }
+  .login {
+    width: 100%;
+  }
+  form {
+    padding: 20px;
+  }
+}
