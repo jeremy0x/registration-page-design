@@ -81,10 +81,6 @@ input {
   margin-bottom: 10px;
 }
 
-input:not(.first-name) {
-  margin-top: 1.5rem;
-}
-
 input:focus {
   border: 1px solid var(--greyish-blue);
 }
