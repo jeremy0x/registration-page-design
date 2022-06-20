@@ -82,7 +82,7 @@ input {
 }
 
 input:not(.first-name) {
-  margin-top: 2rem;
+  margin-top: 1.5rem;
 }
 
 input:focus {
