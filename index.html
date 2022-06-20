@@ -1,45 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon" />
+    <script src="script.js" defer></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
-  <script src="script.js" defer></script>
-</head>
+  <body>
+    <main>
+      <div class="text">
+        <h1>Learn to code by watching others</h1>
+        <p>
+          See how experienced developers solve problems in real-time. <br />
+          Watching scripted tutorials is great, but understanding how<br />developers
+          think is invaluable.
+        </p>
+      </div>
+      <div class="login">
+        <p class="free-trial">
+          <strong>Try it free 7 days</strong> then $20/mo. thereafter
+        </p>
+        <form id="form" action="/" method="GET" autocomplete="off">
+          <input
+            type="text"
+            name="first-name"
+            placeholder="First Name"
+            id="input"
+            class="first-name"
+            required
+            oninvalid="this.setCustomValidity(' ')"
+          /><br />
 
-<body>
-  <main>
-    <div class="text">
-      <h1>Learn to code by watching others</h1>
-      <p>
-        See how experienced developers solve problems in real-time. <br>
-        Watching scripted tutorials is great, but understanding how<br>developers think is invaluable.
-      </p>
-    </div>
-    <div class="login">
-      <p class="free-trial"><strong>Try it free 7 days</strong> then $20/mo. thereafter</p>
-      <form id="form" action="/" method="GET" autocomplete="off" >
-        <input type="text" name="first-name" placeholder="First Name" id="input"  required><br>
-        <p id="error"><em>First Name cannot be empty</em></p>
+          <input
+            type="text"
+            name="last-name"
+            placeholder="Last Name"
+            id="input"
+            required
+            oninvalid="this.setCustomValidity(' ')"
+          /><br />
 
-        <input type="text" name="last-name" placeholder="Last Name" id="input" required><br>
-        <p id="error"><em>Last Name cannot be empty</em></p>
-        
-        <input type="email" name="email" placeholder="Email Address" id="input" required><br>
-        <p id="error"><em>Looks like this is not an email</em></p>
+          <input
+            type="email"
+            name="email"
+            placeholder="Email Address"
+            id="input"
+            required
+            oninvalid="this.setCustomValidity(' ')"
+          /><br />
 
-        <input type="password" name="password" placeholder="Password" id="input" required><br>
-        <p id="error"><em>Password cannot be empty</em></p>
+          <input
+            type="password"
+            name="password"
+            placeholder="Password"
+            id="input"
+            required
+            oninvalid="this.setCustomValidity(' ')"
+          /><br />
 
-        <button type="submit" class="submit">CLAIM YOUR FREE TRIAL</button>
-        <p class="terms">By clicking the button, you are agreeing to our <a href="/" target="_top"
-            rel="noopener noreferrer">Terms and Services</a></p>
-      </form>
-  </main>
-</body>
-
+          <button type="submit" class="submit">CLAIM YOUR FREE TRIAL</button>
+          <p class="terms">
+            By clicking the button, you are agreeing to our
+            <a href="/" target="_top" rel="noopener noreferrer"
+              >Terms and Services</a
+            >
+          </p>
+        </form>
+      </div>
+    </main>
+  </body>
 </html>

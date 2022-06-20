@@ -78,23 +78,18 @@ input {
   font-weight: 600;
   font-size: 0.8rem;
   outline: none;
+  margin-bottom: 10px;
 }
 
+input:not(.first-name) {
+  margin-top: 2rem;
+}
 
 input:focus {
   border: 1px solid var(--greyish-blue);
 }
 
-#error {
-  color: var(--red);
-  font-size: 10px;
-  margin-top: 5px;
-  margin-bottom: 20px;
-  text-align: right;
-  visibility: hidden;
-}
-
-input:required:invalid:focus-visible {
+input:focus:invalid {
   background-image: url(icon-error.svg);
   background-position: 90% center;
   background-repeat: no-repeat;
@@ -112,6 +107,7 @@ button {
   cursor: pointer;
   outline: none;
   width: 100%;
+  margin-top: 1rem;
 }
 
 button:hover {
@@ -136,7 +132,7 @@ a {
     background-image: url(bg-intro-mobile.png);
     background-color: var(--red);
     text-align: center;
-    margin: 20% 5%;
+    margin: 20% 10%;
   }
   h1 {
     font-size: 2rem;
