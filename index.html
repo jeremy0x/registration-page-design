@@ -7,6 +7,10 @@
     <title>Login</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon" />
+    <script
+      src="https://kit.fontawesome.com/d778668bce.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="script.js" defer></script>
   </head>
 
@@ -15,48 +19,37 @@
       <div class="text">
         <h1>Learn to code by watching others</h1>
         <p>
-          See how experienced developers solve problems in real-time. <br />
-          Watching scripted tutorials is great, but understanding how<br />developers
-          think is invaluable.
+          See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable.
         </p>
       </div>
       <div class="login">
         <p class="free-trial">
           <strong>Try it free 7 days</strong> then $20/mo. thereafter
         </p>
-        <form id="form" action="/" method="GET" autocomplete="off">
-          <input
-            type="text"
-            name="first-name"
-            placeholder="First Name"
-            class="first-name"
-            required
-            oninvalid="this.setCustomValidity(' ')"
-          /><br />
+        <form id="form" action="">
+          <div class="form-control first-name-container">
+            <input type="text" name="first-name" id="first-name" placeholder="First Name" />
+            <i class="fa-solid fa-circle-exclamation"></i>
+            <small></small>
+          </div>
 
-          <input
-            type="text"
-            name="last-name"
-            placeholder="Last Name"
-            required
-            oninvalid="this.setCustomValidity(' ')"
-          /><br />
+          <div class="form-control">
+            <input type="text" name="last-name" id="last-name" placeholder="Last Name" />
+            <i class="fa-solid fa-circle-exclamation"></i>
+            <small></small>
+          </div>
 
-          <input
-            type="email"
-            name="email"
-            placeholder="Email Address"
-            required
-            oninvalid="this.setCustomValidity(' ')"
-          /><br />
+          <div class="form-control">
+            <input type="email" name="email" id="email" placeholder="Email Address" />
+            <i class="fa-solid fa-circle-exclamation"></i>
+            <small></small>
+          </div>
 
-          <input
-            type="password"
-            name="password"
-            placeholder="Password"
-            required
-            oninvalid="this.setCustomValidity(' ')"
-          /><br />
+          <div class="form-control">
+            <input type="password" name="password" id="password" placeholder="Password" />
+            <i class="fa-solid fa-circle-exclamation"></i>
+            <small></small>
+          </div>
 
           <button type="submit" class="submit">CLAIM YOUR FREE TRIAL</button>
           <p class="terms">
