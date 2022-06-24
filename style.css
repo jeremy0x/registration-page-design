@@ -78,16 +78,16 @@ input {
   font-weight: 600;
   font-size: 0.8rem;
   outline: none;
-  margin-bottom: 10px;
+  margin-bottom: 2rem;
 }
 
 input:focus {
   border: 1px solid var(--greyish-blue);
 }
 
-input:focus:invalid {
-  background-image: url(icon-error.svg);
-  background-position: 90% center;
+input:required:invalid:focus-visible {
+  background-image: url('icon-error.svg');
+  background-position: 95% center;
   background-repeat: no-repeat;
   border: 1px solid var(--red);
 }
