@@ -87,13 +87,6 @@ input:focus {
   border: 1px solid var(--greyish-blue);
 }
 
-input:required:invalid:focus-visible {
-  background-image: url('icon-error.svg');
-  background-position: 95% center;
-  background-repeat: no-repeat;
-  border: 1px solid var(--red);
-}
-
 button {
   background-color: var(--green);
   color: white;
