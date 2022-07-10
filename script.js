@@ -1,38 +1,36 @@
 const form = document.getElementById('form');
-const fname = document.getElementById('first-name');
-const lname = document.getElementById('last-name');
+const firstName = document.getElementById('first-name');
+const lastName = document.getElementById('last-name');
 const email = document.getElementById('email');
 const pass = document.getElementById('password');
 
-form.addEventListener('submit', (e) => {
-  e.preventDefault();
-
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
   checkInputs();
 });
 
 function checkInputs() {
-  // Get Value
-  const fnameValue = fname.value.trim();
-  const lnameValue = lname.value.trim();
+  const firstNameValue = firstName.value.trim();
+  const lastNameValue = lastName.value.trim();
   const emailValue = email.value.trim();
   const passValue = pass.value.trim();
 
   if (
-    fnameValue === '' ||
-    lname.value === '' ||
+    firstNameValue === '' ||
+    lastName.value === '' ||
     emailValue === '' ||
     passValue === ''
   ) {
-    if (fnameValue === '') {
-      setError(fname, 'First Name cannot be empty');
+    if (firstNameValue === '') {
+      setError(firstName, 'First Name cannot be empty');
     } else {
-      setSuccess(fname);
+      setSuccess(firstName);
     }
 
-    if (lnameValue === '') {
-      setError(lname, 'Last Name cannot be empty');
+    if (lastNameValue === '') {
+      setError(lastName, 'Last Name cannot be empty');
     } else {
-      setSuccess(lname);
+      setSuccess(lastName);
     }
 
     if (emailValue === '') {
@@ -48,6 +46,7 @@ function checkInputs() {
     }
   } else {
     location.reload();
+    alert('Form Submitted Successfully');
   }
 }
 
