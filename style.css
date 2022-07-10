@@ -116,8 +116,6 @@ span:nth-child(10) {
 
 .free-trial:hover {
   background-color: var(--dark-blue);
-  box-shadow: var(--box-shadow) 0px 10px;
-  transform: translateY(-5px);
 }
 
 form {
